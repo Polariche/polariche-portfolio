@@ -1,0 +1,504 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+    <!-- CSS Files -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="Assets/style.css" rel="stylesheet">
+
+  </head>
+  <body style="overflow-y: scroll;">
+
+    <div id="mainSlide" class="carousel slide">
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+
+          <section id="header" class="d-flex flex-column justify-content-center align-items-center">
+      <h1>Sua Jeon</h1>
+    </section>
+    <section id="bio" class="d-flex flex-column justify-content-center align-items-center">
+      Looking forward to work with you!
+    </section>
+
+          <section id="interests">
+            <div class="container">
+              <div class="row">
+                <h2>Skills</h2>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="row mx-1 my-2 ">
+                      Data
+                    <span>
+                      Data Science (PyTorch, Numpy, Pandas)
+                    </span>
+                    <span>
+                      & Data Crawling (BeautifulSoup, Selenium)
+                    </span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="row mx-1 my-2">
+                      Game
+                    <span>
+                      Unity, OpenGL
+                    </span>
+                  </div>
+                  <div class="row mx-1 my-2">
+                      Web
+                    <span>
+                      HTML / CSS / Javascript & Flask
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="projectlists" class="d-flex flex-column align-items-center">
+            <div class="container">
+              <div class="col">
+                <h2>Projects</h2>
+              </div>
+              <div class="col text-center">
+
+                <div class="projectlist-title row py-2 my-2" data-bs-target="#mainSlide" data-bs-slide="next" project-id="#keti" onclick="activateProject(this);"
+                  style="
+                    background-image: url('Assets/keti/cat_transformed.png');
+                    background-position: 0% 35%;
+                    background-size: cover;">
+                  <div class="projectlist-title-text py-1">
+                    <h3>Research Project @ KETI</h3>
+                  </div>
+                </div>
+
+                <div class="projectlist-title row py-2 my-2" data-bs-target="#mainSlide" data-bs-slide="next" project-id="#cloudclass" onclick="activateProject(this);"
+                  style="
+                    background-image: url('Assets/cloudclass/mockup.png');
+                    background-position: 0% 34%;
+                    background-size: cover;">
+                  <div class="projectlist-title-text py-1">
+                    <h3>NetCC Season 7 “모여봐요 구름교실”</h3>
+                  </div>
+                </div>
+
+                <div class="projectlist-title row py-2 my-2" data-bs-target="#mainSlide" data-bs-slide="next" project-id="#moldova" onclick="activateProject(this);"
+                  style="
+                  background-image: url('Assets/moldova/teaching.jpg');
+                  background-position: 50% 30%;
+                  background-size: 100% 380%;">
+                  <div class="projectlist-title-text py-1">
+                    <h3>GIST-NIA World Friends ICT Volunteers</h3>
+                  </div>
+                </div>
+
+                <div class="projectlist-title row py-2 my-2" data-bs-target="#mainSlide" data-bs-slide="next" project-id="#jgdiff" onclick="activateProject(this);"
+                  style="
+                    background-image: url('Assets/jgdiff/jg_overview.webp');
+                    background-position: 0% 60%;
+
+                    background-size: cover;">
+                  <div class="projectlist-title-text py-1">
+                    <h3>ㅈㄱㅊㅇ</h3>
+                  </div>
+                </div>
+
+                <div class="projectlist-title row py-2 my-2" data-bs-target="#mainSlide" data-bs-slide="next" project-id="#baedalgeek" onclick="activateProject(this);"
+                  style="
+                    background-image: url('Assets/baedalgeek/food2.jpg');
+                    background-size: cover;
+                    background-position: 0% 50%;">
+                  <div class="projectlist-title-text py-1">
+                    <h3>Baedalgeek @ Cloudstone Inc</h3>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+          <section id="contacts" class="d-flex flex-column align-items-center">
+            <!-- TODO: insert CV, mail, github -->
+            polariche@gmail.com
+            github.com/polariche
+          </section>
+        </div>
+
+        <div class="carousel-item">
+          <section id="projects" class="d-flex flex-column align-items-center">
+
+            <div id="keti" class="container project" style="display: none;">
+              <div class="col">
+                <div class="row project-header" style="position: relative;">
+                  <img src="Assets/keti/cat_transformed.png">
+                  <h2 class="project-title">Research Project @ KETI</h2>
+                </div>
+
+                <div class="row content py-4">
+                  <h3>Introduction</h3>
+                  <p>
+                    광주과학기술원 AI 대학원 석박통합과정과 연계하여, 한국전자기술연구원에서 계약직으로 근무하면서 권용훈 선임님과 함께 진행한 연구입니다. 
+                  </p>
+                </div>
+
+                <div class="row content py-4">
+                  <h3>Motivation</h3>
+                  <div class="row">
+                    <div class="col"><img class="img-fluid" src="Assets/keti/slide1.png"></div>
+                    <div class="col"><img class="img-fluid" src="Assets/keti/slide2.png"></div>
+                  </div>
+                  <div class="row">
+                    <p>
+                      작년 컴퓨터 비전 학계에서는 StyleGAN 과 NeRF 를 합쳐서, 단일 이미지 데이터셋으로부터 3D 렌더링을 생성하는 Single-Image 3D GAN 이 핫한 토픽으로 떠올랐습니다. 해당 연구들은 FFHQ 와 AFHQ  등 크롭 및 정렬된 데이터셋을 이용해서 해당 데이터셋에 적합한 3D 형태를 생성하고 렌더링 해줍니다. 여기서 데이터셋의 범위를 좀 더 확대하여, LSUN Cat 등 좀 더 “In-the-wild” 한 데이터셋에 대해서도 3D 형태를 생성할 수 있을까요?
+                    </p>
+                  </div>
+
+                  <div class="row my-4">
+                    <div class="col"><img class="img-fluid" src="Assets/keti/gangealing_cvpr_poster_ratio.png"></div>
+                    <div class="col"><img class="img-fluid" src="Assets/keti/optical_flow.png"></div>
+                  </div>
+                  <div class="row">
+                    <p>
+                      그 물음을 해결하기 위해, GANgealing [1] 의 아이디어를 가져 왔습니다. GANgealing 은 Affine Transform 과 Flow Transform 을 합쳐서 원본 소스 이미지를 타겟 좌표계로 변환 시킵니다. 이 “Flow Transform” 의 역할을 Optical flow로 재해석한다면, 필요한 Flow 로부터 Depth 와 Camera 좌표계를 획득할 수 있지 않을까요?
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row content py-4">
+                  <div class="row">
+                    <div class="col">
+                      <img class="img-fluid" src="Assets/keti/failure_cases.PNG" style="border-width: thin; border-color: black;">
+                    </div>
+                    <div class="col-lg-8">
+                      <h3>Difficulties with GANgealing</h3>
+                      <p>
+                        GANgealing 은 GAN 에서 생성한 샘플 페어링 (raw pose, aligned pose) 의 perceptual loss를 최소화하여 transformer 모듈들을 학습 시킵니다. 그런데 그 두 개의 샘플을 처음부터 비교하기엔 어려우니, 타겟 샘플의 포즈를 raw pose 와 aligned pose 의 중간 포즈로 생성합니다. 트레이닝 초기에는 raw pose 에 더 가깝게 설정하고, 후기에는 aligned pose 에 가까워지게 하여, 난이도를 천천히 올려가며 학습시키는 것이지요.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <p>
+                      그런데 여기서 한 가지 문제가 있습니다. GANgealing 은 LSUN Cat 처럼 어려운 데이터셋을 타겟으로 고안된 것이지만, 실제 학습을 시켜보면 어려운 raw pose 일수록 transformer 가 잘 작동하지 않으려 했습니다. 
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row content py-4">
+                  <h3>New Loss Functions</h3>
+                  <p>
+                      TODO!!!!!!!!!!!
+                  </p>
+                </div>
+                
+                <div class="row content py-4">
+                  <h3>Project Highlights</h3>
+                  <ul>
+                  <li>New Loss function (Siamese loss + Anchor loss)</li>
+                  <li>Re-implement GANgealing on StyleGAN3 code base 
+                  (vs original GANgealing - based on rosinality’s StyleGAN2)</li>
+                  <li>PerspectiveTransformer : Given two camera transforms (source & target) and a Triplane representation, warp source colors into target image</li>
+                  </ul>
+                </div>
+
+                <div class="row content py-4">
+                  <h3>References</h3>
+                  <ul>
+                  <li>[1]
+W. Peebles, J.-Y. Zhu, R. Zhang, A. Torralba, A. A. Efros, and E. Shechtman, ‘GAN-Supervised Dense Visual Alignment’. arXiv, 2021.</li>
+                  <li>[2]
+Z. Lv, K. Kim, A. Troccoli, D. Sun, J. M. Rehg, and J. Kautz, ‘Learning Rigidity in Dynamic Scenes with a Moving Camera for 3D Motion Field Estimation’. arXiv, 2018.</li>
+                  </ol>
+                </div>
+
+                <div class="row content py-4">
+                  <h3>Links</h3>
+                  <span><i class="bi bi-github"></i> Project Repository : https://github.com/Polariche/sg_gealing</span>
+                  <span><i class="bi bi-github"></i> GANgealing Official Implementation : https://github.com/wpeebles/gangealing</span>
+                </div>
+
+                <div class="row my-4">
+                  <span></span>
+                </div>
+
+              </div>
+            </div>
+
+            
+            <div id="cloudclass" class="container project" style="display: none;">
+              <div class="col">
+                <div class="row project-header" style="position: relative;">
+                  <img src="Assets/cloudclass/mockup.png">
+                  <h2 class="project-title">NetCC Season 7 “모여봐요 구름교실”</h2>
+                </div>
+
+                <div class="row content py-4">
+                  <h3>Introduction</h3>
+                  <p>
+                    2020년, 아직 코로나가 한창일 때! 비대면 수업을 학생으로서, 그리고 조교로서 겪으면서 불편한 점이 많았습니다.
+    답답한 마스크와 웹캠 화면 속에 갇혀, 학생들과 교수님 사이에 오가던 정겨운 말소리와 몸짓을 그리워 할 때… 그 시절을 뭉게뭉게 떠올릴 수 있는 “모여봐요 구름교실” 을 고안했습니다.
+                  </p>
+
+                  <p>
+    “모여봐요 구름교실” 은 기존 화상회의 플랫폼에 웹캠 기반 실시간 아바타를 도입하여, 학생과 교육자 간의 원활한 상호작용을 돕습니다. 학생의 클라이언트를 통해 웹캠 영상을 읽고, 영상을 통해 학생의 상태를 식별하고 서버로 전송하여 학생의 아바타를 실시간으로 업데이트 합니다.
+                  </p>
+
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/PLJv-U2w-Tk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                </div>
+                <div class="row content py-4">
+                  
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <h3>Facial Detector</h3>
+                        <p>
+                          제가 “모여봐요 구름교실” 에서 맡았던 역할은 클라이언트 내 웹캠 영상을 처리하여 학생의 상태를 식별하는 모듈을 구현하는 역할이었습니다.
+                        </p>
+                        <p>
+                          우선 OpenCV 라이브러리으로 실시간 웹캠 영상을 취득하고, 현재 프레임을 Pre-trained 모델들을 통해 분석하여 영상 내 인물 영역, 인물 특징, 랜드마크 위치를 획득합니다. 그 데이터를 활용하여 학생의 신원을 확인하고, 랜드마크 좌표를 통해 표정/눈 방향/졸음 여부를 판별합니다. 이전 프레임에서 변동이 있다면, Websocket을 통해 서버로 전송하여 학생의 상태를 실시간으로 반영할 수 있도록 합니다.
+                        </p>
+                      </div>
+                      <div class="col">
+                        <img class="img-fluid" src="Assets/cloudclass/demo.gif">
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row content py-4">
+                  <h3>Links</h3>
+                  <span><i class="bi bi-github"></i> Project Repository : https://github.com/netcc-gist-2020</span>
+                  <span><i class="bi bi-github"></i> FacialDetector Repository : https://github.com/netcc-gist-2020/FacialDetector</span>
+                  <span>Press: https://www.etnews.com/20201210000065</span>
+                </div>
+
+                <div class="row my-4">
+                  <span></span>
+                </div>
+
+              </div>
+            </div>
+
+
+            <div id="moldova" class="container project" style="display: none;">
+              <div class="col">
+                <div class="row project-header" style="position: relative;">
+                  <img src="Assets/moldova/teaching.jpg">
+                  <h2 class="project-title">GIST-NIA World Friends ICT Volunteers</h2>
+                </div>
+
+                <div class="row content py-4">
+                  <h3>Introduction</h3>
+                  <p>
+                    2019년도 월드프렌즈 ICT 봉사단으로 몰도바 ASEM 대학에 파견되어, 1달 간 현지 학생들을 대상으로 교육 봉사를 했습니다. “몰도바에서 몰도와드릴까요?” 팀에서 IT 강의를 맡아, 강의 기획 및 진행을 하였습니다.
+                  </p>
+                  <p>
+                    어렸을 적, 저를 프로그래밍의 세계로 이끈 것은 “나만의 홈페이지를 만들자!” 라는 작은 소망이었습니다. 그 꿈의 두근거림을 몰도바의 자라나는 친구들에게 전해 주고 싶어서, 한 달 동안 홈페이지를 만드는 강의를 고안하였습니다. 프론트엔드 (HTML / CSS / Javascript) 와 백엔드 (Python Flask, SQLite) 를 4주에 걸쳐 가르쳤고, 모든 학생이 자신만의 홈페이지를 완성할 수 있도록 하였습니다.
+                  </p>
+                  <p>
+                    수업은 약 2시간으로, 1시간 동안은 슬라이드 자료 설명 및 라이브 시연을 통해 강의하고, 나머지 1시간 동안은 직접 실습할 시간을 주며 질문이 있는 학생들에게 도움을 주었습니다. 매 수업마다 슬라이드 자료 및 예시 홈페이지 파일을 제공했는데, 학생들이 예시를 그대로 따라하는 게 아니라 각자의 개성과 취향을 발휘해서 자신만의 작품을 만들어 나갔습니다. 그 점이 제게 있어서 가장 자랑스럽고 뿌듯했습니다!
+                  </p>
+
+                </div>
+                <div class="row content py-4 justify-content-center ">
+                  <h3>Gallery</h3>
+
+                  <div class="col-lg-8">
+                    <div id="carouselPPT" class="carousel slide mx-4">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="Assets/moldova/class_overview.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Assets/moldova/live_demo.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Assets/moldova/teaching.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Assets/moldova/students.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Assets/moldova/slide1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Assets/moldova/slide2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Assets/moldova/slide3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="Assets/moldova/slide4.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPPT" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselPPT" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row content py-4">
+                  <h3>Links</h3>
+                  <span><i class="bi bi-github"></i> Project Page : https://github.com/hello-moldova/make-a-page</span>
+                  <span><i class="bi bi-dropbox"></i> Class Slides : https://drive.google.com/file/d/1cgRBYho4Ccv3azjeBh0EhtjgG7322ql_/view?usp=sharing</span>
+                  <span><i class="bi bi-dropbox"></i> Student Works : https://www.dropbox.com/sh/5pkoz6ydmndlen7/AAB7gnv3HqIXdCbcjPXRo1oaa?dl=0</span>
+
+                </div>
+
+                <div class="row my-4">
+                  <span></span>
+                </div>
+
+              </div>
+            </div>
+            
+
+            <div id="jgdiff" class="container project" style="display: none;">
+              <div class="col">
+                <div class="row project-header" style="position: relative;">
+                  <img src="Assets/jgdiff/jg_overview.webp">
+                  <h2 class="project-title">ㅈㄱㅊㅇ</h2>
+                </div>
+
+                <div class="row content py-4">
+                  <h3>Introduction</h3>
+                  <p>
+                    알고리즘 개론 (EC2206)의 팀 과제로 수행한 프로젝트 "정글차이"입니다.</p>
+                  <p>
+                    “정글차이!!” 리그 오브 레전드를 플레이 하다보면 한 번쯤은 외치게 되는 한 마디입니다. 한 치 앞을 알 수 없는 이 게임, 드넓은 협곡을 누비며 그 판도를 뒤집는 정글러들. 그들의 심리와 전략을 데이터를 통해 알아 봤습니다.
+                  </p>
+                </div>
+                <div class="row content py-4 justify-content-center">
+                  <h3>Insights</h3>
+                    <div class="row">
+                      <div class="col" style="position: relative;">
+                        <img class="img-fluid" src="Assets/jgdiff/Lee Sin.png">
+                        <img class="lol-icon" src="Assets/jgdiff/leesin_icon.webp">
+                        
+                      </div>
+                      <div class="col" style="position: relative;">
+                        <img class="img-fluid" src="Assets/jgdiff/Karthus.png">
+                        <img class="lol-icon" src="Assets/jgdiff/karthus_icon.webp">
+                      </div>
+                      <div class="col-lg-6 col-md-4">
+                        <p>
+                          리그 오브 레전드의 경기 데이터에는 1분, 2분, 3분, ... 등 일정 시간 간격마다 모든 플레이어의 위치, 레벨, 아이템 상황 등이 기록되어 있습니다. 이를 이용해서, 정글러가 어느 위치에서 게임을 시작하는 지를 알 수 있습니다. 
+                        </p>
+
+                      </div>
+                    </div>
+                    <div class="row">
+                      <p>
+                        예시로, 두 챔피언 (좌측 리신, 우측 카서스)의 시작 위치를 나타내 봤습니다. 블루 (왼쪽 아래) 진영을 기준으로, 맵의 오른쪽 하단에 위치한 레드 버프에서 시작하는 것이 일반적입니다.
+                      </p>
+                      <p>
+                        리신 플레이어는 그 관례를 따르는 경우가 많으나, 카서스 플레이어는 맵 왼쪽 상단의 블루 버프에서 시작하는 것을 선호합니다. 그 이유는 두 가지로, 초반에 상대 정글러를 피해 성장을 노리고, 마나가 부족한 챔피언 특성상 블루 버프를 빠르게 활용하기 위한 것으로 볼 수 있습니다.
+                      </p>
+                    </div>
+                </div>
+
+                <div class="row content py-4 justify-content-center">
+                  <h3>Project Details</h3>
+                  <div class="row">
+                    <div class="col">
+                      <img class="img-fluid" src="Assets/jgdiff/slide1.png">
+                    </div>
+                    <div class="col">
+                      <img class="img-fluid" src="Assets/jgdiff/slide2.png">
+                    </div>
+                  </div>
+                  <div class="row">
+                    <p>
+                    Riot Developer API를 통해 경기 데이터(.json)를 취득하고, 각 경기들을 취합하여 카테고리 (타임라인, 킬/오브젝트 이벤트)마다 하나의 데이터 테이블(.csv)로 정리합니다. </p>
+                    <p> 간단한(?) pre-processing 을 거친 후, 이 데이터 테이블을 pandas 로 불러와서 쿼리하며 여러가지 궁금증들의 답을 찾아가 봤습니다. 플레이어의 좌표가 정확히 찍히는 데이터 특성상, 결과를 협곡 지도 위에 쉽게 시각화할 수 있었습니다. 
+                    </p>
+                  </div>
+                </div>
+
+                <div class="row content py-4">
+                  <h3>Links</h3>
+                  <span><i class="bi bi-github"></i> Project Page : https://github.com/Polariche/JgDiff</span>
+                  <span>Riot Developer API : https://developer.riotgames.com/apis</span>
+                </div>
+
+                <div class="row my-4">
+                  <span></span>
+                </div>
+
+              </div>
+            </div>
+
+            <div id="baedalgeek" class="container project" style="display: none;">
+              <div class="col">
+                <div class="row project-header" style="position: relative;">
+                  <img src="Assets/baedalgeek/food3.jpg">
+                  <h2 class="project-title">Baedalgeek @ Cloudstone Inc</h2>
+                </div>
+
+                <div class="row content py-4">
+                  <h3>Introduction</h3>
+                  <p>
+                    2018년 12월부터 2019년 6월까지, 7개월 간 (주)클라우드스톤에서 데이터 엔지니어로 근무하며, 판매 데이터를 분석하고 인사이트를 전달하는 업무를 수행했습니다.</p>
+                  <p> 
+                    (주)클라우드스톤은 “배달비 0원”을 캐치프라이즈로 삼는 “배달긱”을 서비스하는 회사로, 거점 대학교의 인근 음식점들과 예약제 배달 계약을 맺어, 점심 시간 혹은 저녁 시간마다 학생들에게 한 끼 식사를 전해 주는 역할을 맡고 있습니다.
+                  </p>
+                </div>
+                <div class="row content py-4">
+                  <h3>Projects</h3>
+                  <p>
+                    학교 근처에는 다양한 종류의 식당들이 있기 마련입니다. 김밥, 덮밥, 초밥, 국밥 등 다양한 품목들이 있는데, 이 메뉴들이 꾸준히 사랑받았던 기록을 보면서 그 너머의 이야기를 읽어내려 했습니다. 
+                  </p>
+                  <p>
+                    그 노력의 일환으로, 메트릭 공간 기반 메뉴 분석 연구를 진행 했습니다. 음악 플레이리스트 예측 논문 (Playlist Prediction via Metric Embedding) 의 내용을 기반으로, 판매 음식 품목을 메트릭 공간에 배치하고 성격이 비슷한 품목끼리 클러스터링 되는 것을 확인 하였습니다. Pandas 와 Tensorflow (v1) 를 이용하여 데이터 정리 및 메트릭 러닝을 하였고, Tensorboard 와 Matplotlib 을 통해 결과를 시각화 했습니다. 
+                  
+                    넷플릭스 추천 시스템과 유튜브 알고리즘에서도 영감을 받아 메뉴 추천 시스템도 기획을 준비했으나, 학업에 집중하고 전공 지식을 더 쌓기 위해 다음을 기약하게 되었습니다.
+                  </p>
+
+                  <img class="img-fluid" src="Assets/baedalgeek/team.jpg">
+                </div>
+
+                <div class="row content py-4">
+                  <h3>Links</h3>
+                  <span><i class="bi bi-github"></i> Official Website : https://www.baedalgeek.com/</span>
+                  <span><i class="bi bi-github"></i> Facebook : https://www.facebook.com/profile.php?id=100063462524126</span>
+                </div>
+
+                <div class="row my-4">
+                  <span></span>
+                </div>
+
+              </div>
+            </div>
+
+          </section>
+
+          <section id="projectsFooter" class="d-flex flex-column align-items-center">
+            <button type="button" data-bs-target="#mainSlide" data-bs-slide="prev" onclick = "topFunction();">
+              Back
+            </button>
+          </section>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    
+    <script src="Assets/main.js"></script>
+
+    <!-- JS Files -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
+</html>
